@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+main{
+	width: 960px;
+	margin: 50px auto;
+}
+.box{
+	width: 300px;
+	border: thin solid #dddddd;
+	float: left;
+	margin-right: 30px;
+	position: relative;
+}
+.box:last-child{
+	margin-right: 0;
+}
+.box .step{
+	background-color: orange;
+	color: white;
+	position: absolute;
+	padding: 5px;
+}
+.box img{
+	width:280px;
+	margin: 10px;
+}
+.box .text{
+	margin:0 10px 10px 10px;
+}
+.box .title{
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 768px){
+	main{
+		width: 100%;
+	}
+	.box{
+		width: 90%;
+		float: none;
+		margin:0 auto 20px;
+	}
+	.box:last-child{
+		margin: 0 auto;
+	}
+	.box img{
+		margin:0;
+		padding: 10px;
+		width: 100%;
+	}
+}
